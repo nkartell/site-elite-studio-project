@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.min.css">
+    
+    <link rel="stylesheet" href="carousel.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Patriot</title>
+  </head>
+  <body class="body">
+    <header class="header header__navigation " id="page">
+      <div class="header__block">
+        <div class="logo">
+          <div class="logo__img">
+            <img src="./assets/logo-icon.svg" alt="logo-icon" />
+          </div>
+          <div class="logo__text">PATRIOT</div>
+        </div>
+
+        <div class="nav nav__desktop">
+          <ul class="nav__list">
+            <li>Услуги</li>
+            <li>Продукция</li>
+            <li>Проекты</li>
+            <li>Компания</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="location">
+          <div class="location__img">
+            <img src="./assets/search-icon.svg" alt="search-icon" />
+          </div>
+          <div class="location__text"></div>
+        </div>
+
+        <div class="tel">
+          <div class="tel__img">
+            <img src="./assets/tel-icon.svg" alt="tel-icon" />
+          </div>
+          <div class="tel__text"></div>
+        </div>
+
+        <div class="burger burger__button">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
+      </div>
+
+      <nav class="nav__mobile" id="menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link"> Услуги <span class="arrow"></span> </a>
+            <ul class="nav__sublist">
+              <li class="nav__subitem">Управление активами и инвестиции</li>
+              <li class="nav__subitem">Автоматизация бизнеса</li>
+              <li class="nav__subitem">Юридическая практика</li>
+              <li class="nav__subitem">Лизинг</li>
+              <li class="nav__subitem">Информационная безопасность</li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Продукция <span class="arrow"></span></a>
+            <ul class="nav__sublist">
+              <li class="nav__subitem">Продукция 1</li>
+              <li class="nav__subitem">Продукция 2</li>
+              <li class="nav__subitem">Продукция 3</li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Проекты <span class="arrow"></span> </a>
+            <ul class="nav__sublist">
+              <li class="nav__subitem">Проект 1</li>
+              <li class="nav__subitem">Проект 2</li>
+              <li class="nav__subitem">Проект 3</li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Компания <span class="arrow"></span> </a>
+            <ul class="nav__sublist">
+              <li class="nav__subitem">Компания 1</li>
+              <li class="nav__subitem">Компания 2</li>
+              <li class="nav__subitem">Компания 3</li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="location">
+          <div class="location__img">
+            <img src="./assets/search-icon.svg" alt="search-icon" />
+          </div>
+          <div class="location__text"></div>
+        </div>
+
+        <div class="tel">
+          <div class="tel__img">
+            <img src="./assets/tel-icon.svg" alt="tel-icon" />
+          </div>
+          <div class="tel__text"></div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main main__position">
+      <section class="main__features">
+        <div class="features main__about">
+          <div class="features__title">Patriot — это ключ к успешному бизнесу по всей территории РФ</div>
+          <div class="features__text">
+            Роскошный, быстрый, практичный автомобиль на выгодных условиях лизинга. Станьте ближе к мечте и сократите налог на имущество в три раза.
+          </div>
+
+          <div class="slider features__slider">
+            <button class="slider__button slider__button_left">
+              <img src="./assets/button-left.svg" alt="button-left" />
+            </button>
+            <button class="slider__button slider__button_right">
+              <img src="./assets/button-right.svg" alt="button-right" />
+            </button>
+          </div>
+        </div>
+
+        <div class="feedback main__feedback">
+          <h2 class="feedback__title">Оставить заявку</h2>
+          <p class="feedback__text">Заполните форму и мы свяжемся с вами, чтобы узнать детали вашего проекта.</p>
+
+          <form class="feedback__form">
+            <div class="feedback__input-group feedback__input-group_name">
+              <label class="feedback__label" for="name">Имя*</label>
+              <input class="feedback__input" id="name" type="text" name="name" />
+              <div class="feedback__error feedback__name-error"></div>
+            </div>
+
+            <div class="feedback__input-group feedback__input-group_tel">
+              <label class="feedback__label" for="phone">Телефон*</label>
+              <input class="feedback__input" id="phone" type="tel" name="phone" />
+              <div class="feedback__error feedback__tel-error"></div>
+            </div>
+
+            <div class="feedback__checkbox-group">
+              <input class="feedback__checkbox" type="checkbox" id="terms" name="terms" />
+              <label class="feedback__label" for="terms">Я принимаю <a href="#" class="feedback__link"> условия передачи данных </a> </label>
+            </div>
+
+            <button class="feedback__button" type="submit">Связаться с нами</button>
+
+            <div class="feedback__message"></div>
+          </form>
+        </div>
+
+        <img src="./assets/features-img.png" alt="features-img" class="features__img" />
+
+        <div class="pagination">
+          <button class="pagination__item"></button>
+          <button class="pagination__item pagination__item_active"></button>
+          <button class="pagination__item"></button>
+        </div>
+      </section>
+
+      <section class="products main__products">
+        <div class="info products__info">
+          <h2 class="product__title">Тарифы</h2>
+
+          <div class="slider products__slider">
+            <button class="slider__button slider__button_left">
+              <img src="./assets/button-left.svg" alt="button-left" />
+            </button>
+            <button class="slider__button slider__button_right">
+              <img src="./assets/button-right.svg" alt="button-right" />
+            </button>
+          </div>
+        </div>
+
+        <div class="product-cards owl-carousel">
+          <!-- card1 -->
+          <div class="product-card">
+            <div class="product-card__top">
+              <div class="product-card__tags">
+                <span class="product-card__tag product-card__tag_sale">Акция</span>
+                <span class="product-card__tag product-card__tag_new">Новинка</span>
+                <span class="product-card__tag product-card__tag_hit">Хит</span>
+              </div>
+              <img class="product-card__image" src="./assets/card-img.png" alt="Product 1" />
+              <h3 class="product-card__title">Лайт</h3>
+            </div>
+            <div class="product-card__middle">
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Visa, Master Card, МИР</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Apple Pay, Android Pay</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Электронные кошельки</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Оборот</span>
+                <span class="product-card__feature-percentage">от 0 до 200 т.р.</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <span class="product-card__price product-card__price_today">1500 ₽</span>
+              <button class="product-card__button">Оплатить</button>
+            </div>
+          </div>
+
+          <!-- card2 -->
+          <div class="product-card">
+            <div class="product-card__top">
+              <div class="product-card__tags">
+                <span class="product-card__tag product-card__tag_sale">Акция</span>
+                <span class="product-card__tag product-card__tag_new">Новинка</span>
+                <span class="product-card__tag product-card__tag_hit">Хит</span>
+              </div>
+              <img class="product-card__image" src="./assets/card-img.png" alt="Product 2" />
+              <h3 class="product-card__title">Лайт</h3>
+            </div>
+            <div class="product-card__middle">
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Visa, Master Card, МИР</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Apple Pay, Android Pay</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Электронные кошельки</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Оборот</span>
+                <span class="product-card__feature-percentage">от 0 до 200 т.р.</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <div class="product-card__price-block">
+                <span class="product-card__price product-card__price_today">2000 ₽</span>
+                <span class="product-card__price product-card__price_old">2500 ₽</span>
+              </div>
+
+              <button class="product-card__button">Оплатить</button>
+            </div>
+          </div>
+
+          <!-- card3 -->
+          <div class="product-card">
+            <div class="product-card__top">
+              <div class="product-card__tags">
+                <span class="product-card__tag product-card__tag_sale">Акция</span>
+                <span class="product-card__tag product-card__tag_new">Новинка</span>
+                <span class="product-card__tag product-card__tag_hit">Хит</span>
+              </div>
+              <img class="product-card__image" src="./assets/card-img.png" alt="Product 3" />
+              <h3 class="product-card__title">Лайт</h3>
+            </div>
+            <div class="product-card__middle">
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Visa, Master Card, МИР</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Apple Pay, Android Pay</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Электронные кошельки</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Оборот</span>
+                <span class="product-card__feature-percentage">от 0 до 200 т.р.</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <span class="product-card__price product-card__price_today">2500 ₽</span>
+              <button class="product-card__button">Оплатить</button>
+            </div>
+          </div>
+
+          <!-- card4 -->
+          <div class="product-card">
+            <div class="product-card__top">
+              <div class="product-card__tags">
+                <span class="product-card__tag product-card__tag_sale">Акция</span>
+                <span class="product-card__tag product-card__tag_new">Новинка</span>
+                <span class="product-card__tag product-card__tag_hit">Хит</span>
+              </div>
+              <img class="product-card__image" src="./assets/card-img.png" alt="Product 4" />
+              <h3 class="product-card__title">Лайт</h3>
+            </div>
+            <div class="product-card__middle">
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Visa, Master Card, МИР</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Apple Pay, Android Pay</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Электронные кошельки</span>
+                <span class="product-card__feature-percentage">3,7%</span>
+              </div>
+              <div class="product-card__feature">
+                <span class="product-card__feature-name">Оборот</span>
+                <span class="product-card__feature-percentage">от 0 до 200 т.р.</span>
+              </div>
+            </div>
+            <div class="product-card__bottom">
+              <span class="product-card__price product-card__price_today">3000 ₽</span>
+              <button class="product-card__button">Оплатить</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <button class="pagination__item"></button>
+          <button class="pagination__item pagination__item_active"></button>
+          <button class="pagination__item"></button>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.mmenu/9.3.0/mmenu.js"></script>
+    
+   
+    <script src="carousel.js"></script>
+    <script src="ClientConfig.js"></script>
+    <script src="index.js"></script>
+
+    
+  </body>
+</html>
